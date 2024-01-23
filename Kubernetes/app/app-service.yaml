@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: detyrakursit-svc1
+  name: detyrekursi-svc1
 spec:
   selector:
-    app: detyrakursit
+    app: detyrekursi
   ports:
     - protocol: TCP
       port: 8083
@@ -15,10 +15,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: detyrakursit-svc1
+  name: detyrekursi-svc1
 spec:
   selector:
-    app: detyrakursit
+    app: detyrekursi
   ports:
     - port: 8084
       protocol: TCP

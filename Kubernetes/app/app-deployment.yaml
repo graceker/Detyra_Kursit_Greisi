@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: detyrakursit
+  name: detyrekursi
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: detyrakursit
+      app: detyrekursi
   template:
     metadata:
       labels:
-        app: detyrakursit
+        app: detyrekursi
     spec:
       containers:
-      - name: detyrakursit
-        image: greisikertuka/dk:latest
+      - name: detyrekursi
+        image: greisikertuka/detyrekursi:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
