@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: detyrakursit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: detyrakursit
+  template:
+    metadata:
+      labels:
+        app: detyrakursit
+    spec:
+      containers:
+      - name: detyrakursit
+        image: greisikertuka/dk:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+
+# kubectl apply -f app-deployment.yaml 
